@@ -5,7 +5,12 @@
 
 ###Usage
 
-1. `npm install`
-2. `jspm install`
-3. `npm install serve -g` (you can use any web-server you like)
+1. `npm run setup`
+2. `npm install serve -g` (a simple web-server)
+3. `npm run dev` - runs the dev mode on :3000
 
+#####Production
+
+1. Follow steps 1 and 2 from above
+2. `npm run prod-build`
+3. `npm run prod` 

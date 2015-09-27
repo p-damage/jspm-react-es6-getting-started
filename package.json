@@ -4,7 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "npm install && jspm install",
+    "clean": "rm -rf dist",
+    "dist": "mkdir dist",
+    "bundle": "jspm bundle-sfx src/main dist/app.js",
+    "uglify": "./node_modules/.bin/uglifyjs dist/app.js -o dist/app.min.js",
+    "html-dist": "./node_modules/.bin/html-dist index.html --remove-all --minify --insert app.min.js -o dist/index.html",
+    "prod-build": "npm run clean && npm run dist && npm run bundle && npm run uglify && npm run html-dist",
+    "dev": "serve",
+    "prod": "serve dist/"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +28,8 @@
     }
   },
   "devDependencies": {
-    "jspm": "^0.16.10"
+    "html-dist": "^0.1.0",
+    "jspm": "^0.16.10",
+    "uglifyjs": "^2.4.10"
   }
 }
