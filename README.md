@@ -10,6 +10,6 @@
 
 #####Production
 
-1. Follow steps 1 and 2 from above
+1. Follow step 1 from above
 2. `npm run prod-build`
 3. `npm run prod` - runs on port 3000
