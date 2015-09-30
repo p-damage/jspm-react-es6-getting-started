@@ -19,7 +19,10 @@
   "license": "ISC",
   "jspm": {
     "dependencies": {
-      "react": "npm:react@^0.13.3"
+      "express": "npm:express@^4.13.3",
+      "html-dist": "npm:html-dist@^0.1.0",
+      "react": "npm:react@^0.13.3",
+      "uglifyjs": "npm:uglifyjs@^2.4.10"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
@@ -28,8 +31,6 @@
     }
   },
   "devDependencies": {
-    "html-dist": "^0.1.0",
-    "jspm": "^0.16.10",
-    "uglifyjs": "^2.4.10"
+    "jspm": "^0.16.10"
   }
 }
