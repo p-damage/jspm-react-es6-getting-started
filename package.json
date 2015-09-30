@@ -12,8 +12,8 @@
     "uglify": "./node_modules/.bin/uglifyjs dist/app.js -o dist/app.min.js",
     "html-dist": "./node_modules/.bin/html-dist index.html --remove-all --minify --insert app.min.js -o dist/index.html",
     "prod-build": "npm run clean && npm run dist && npm run bundle && npm run uglify && npm run html-dist",
-    "dev": "serve",
-    "prod": "serve dist/"
+    "dev": "NODE_ENV=dev node ./server/index.js",
+    "prod": "node ./server/index.js"
   },
   "author": "",
   "license": "ISC",
