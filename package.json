@@ -19,6 +19,8 @@
   "license": "ISC",
   "jspm": {
     "dependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
       "express": "npm:express@^4.13.3",
       "html-dist": "npm:html-dist@^0.1.0",
       "react": "npm:react@^0.13.3",
