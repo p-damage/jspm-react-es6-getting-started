@@ -1,5 +1,8 @@
 'use strict'
 
-require('babel/register');
+let System = require('jspm').Loader();
 
-module.exports = require('./server');
+System.import('./server/server')
+	.catch(function (err) {
+		console.log(err);
+	});
